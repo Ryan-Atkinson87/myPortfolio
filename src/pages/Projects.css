@@ -21,9 +21,8 @@
 }
 .prow:hover .pgo { background: var(--c-accent); color: var(--c-accent-ink); border-color: var(--c-accent); transform: translateX(4px); }
 .prow .pgo svg { width: 20px; height: 20px; }
-.prow-link { position: absolute; inset: 0; z-index: 1; }
-.prow > * { position: relative; z-index: 2; }
-.prow .prow-link { z-index: 0; }
+.prow-link { position: absolute; inset: 0; z-index: 2; }
+.prow > :not(.prow-link) { position: relative; z-index: 1; }
 
 @media (max-width: 860px) {
   .prow { grid-template-columns: 1fr; gap: 18px; }
