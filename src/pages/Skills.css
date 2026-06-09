@@ -1,0 +1,22 @@
+.page-head { padding: 72px 0 0; }
+.sk-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 48px; }
+@media (max-width: 920px) { .sk-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .sk-grid { grid-template-columns: 1fr; } }
+.sk-card { display: flex; flex-direction: column; gap: 18px; }
+.sk-card .sk-top { display: flex; align-items: center; gap: 13px; }
+.sk-ico { width: 42px; height: 42px; border-radius: var(--radius-sm); background: var(--c-accent-soft); color: var(--c-accent); display: flex; align-items: center; justify-content: center; flex: none; }
+.sk-ico svg { width: 22px; height: 22px; }
+.sk-card h4 { margin: 0; }
+.sk-card .sk-note { font-family: var(--font-mono), monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--c-ink-subtle); margin-top: 2px; }
+
+.howrow { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid var(--c-line); border-bottom: 1px solid var(--c-line); margin-top: 8px; }
+.howrow > div { padding: 36px 32px 36px 0; border-right: 1px solid var(--c-line-soft); }
+.howrow > div:last-child { border-right: 0; padding-right: 0; }
+.howrow .n { font-family: var(--font-mono), monospace; font-size: 11px; letter-spacing: 0.14em; color: var(--c-accent); font-weight: 600; }
+.howrow h4 { margin: 14px 0 8px; }
+.howrow p { margin: 0; color: var(--c-ink-muted); font-size: 14.5px; line-height: 1.6; }
+@media (max-width: 760px) {
+  .howrow { grid-template-columns: 1fr; }
+  .howrow > div { border-right: 0; border-bottom: 1px solid var(--c-line-soft); padding: 28px 0; }
+  .howrow > div:last-child { border-bottom: 0; }
+}

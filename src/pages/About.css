@@ -1,0 +1,42 @@
+.page-head { padding: 72px 0 0; }
+.ab-grid { display: grid; grid-template-columns: 380px 1fr; gap: 64px; align-items: start; margin-top: 52px; }
+@media (max-width: 900px) { .ab-grid { grid-template-columns: 1fr; gap: 40px; } }
+.ab-portrait { position: relative; }
+.ab-portrait .ph { aspect-ratio: 4 / 5; }
+.ab-card { margin-top: 16px; border: 1px solid var(--c-line); border-radius: var(--radius-md); padding: 18px 20px; }
+.ab-card .k { font-family: var(--font-mono), monospace; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-ink-subtle); }
+.ab-card .v { font-size: 15px; color: var(--c-ink); font-weight: 500; margin-top: 3px; }
+.ab-card hr { margin: 14px 0; }
+
+.ab-prose p { font-size: 18px; line-height: 1.7; color: var(--c-ink-muted); margin: 0 0 1.2em; }
+.ab-prose p:first-child { font-size: 21px; color: var(--c-ink); line-height: 1.55; }
+.ab-prose strong { color: var(--c-ink); }
+
+.drives { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 48px; }
+@media (max-width: 760px) { .drives { grid-template-columns: 1fr; } }
+.drives .card h4 { margin: 0 0 10px; }
+.drives .card p { margin: 0; color: var(--c-ink-muted); font-size: 14.5px; line-height: 1.6; }
+.drives .card .n { font-family: var(--font-mono), monospace; font-size: 11px; letter-spacing: 0.14em; color: var(--c-accent); font-weight: 600; margin-bottom: 14px; display: block; }
+
+.hobbies { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 40px; }
+@media (max-width: 760px) { .hobbies { grid-template-columns: 1fr 1fr; } }
+.hobby { border: 1px solid var(--c-line); border-radius: var(--radius-md); padding: 22px; background: var(--c-surface); }
+.hobby .ico { width: 40px; height: 40px; border-radius: var(--radius-sm); background: var(--c-accent-soft); color: var(--c-accent); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+.hobby .ico svg { width: 21px; height: 21px; }
+.hobby h4 { margin: 0 0 6px; font-size: 17px; }
+.hobby p { margin: 0; font-size: 13.5px; color: var(--c-ink-muted); line-height: 1.55; }
+
+.ventures { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--c-line); border-radius: var(--radius-lg); overflow: hidden; margin-top: 40px; }
+.ventures a { padding: 28px 26px; border-right: 1px solid var(--c-line); transition: background .18s; display: block; }
+.ventures a:last-child { border-right: 0; }
+.ventures a:hover { background: var(--c-surface); }
+.ventures .vname { font-family: var(--font-display), sans-serif; font-weight: 700; font-size: 18px; letter-spacing: 0.01em; }
+.ventures .vname .d { font-weight: 300; color: var(--c-accent); }
+.ventures p { margin: 8px 0 0; font-size: 13.5px; color: var(--c-ink-muted); line-height: 1.5; }
+@media (max-width: 760px) {
+  .ventures { grid-template-columns: 1fr; }
+  .ventures a { border-right: 0; border-bottom: 1px solid var(--c-line); }
+  .ventures a:last-child { border-bottom: 0; }
+}
+
+.ab-cta { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; padding: 44px; border: 1px solid var(--c-line); border-radius: var(--radius-lg); background: var(--c-surface); margin-top: 64px; }

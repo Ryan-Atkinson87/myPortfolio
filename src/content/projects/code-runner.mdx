@@ -1,0 +1,46 @@
+---
+order: 4
+slug: code-runner
+title: Code Runner
+kind: AI agent orchestration
+status: building
+statusLabel: "Foundations in progress"
+year: "2026"
+summary: "An orchestration layer that drives autonomous coding agents wave by wave — managing branches, PRs, Notion sync and usage, keeping the human out of the loop until a hand-off is ready."
+role: "Solo — architecture, backend, agent design"
+stackShort: ["FastAPI", "Docker", "React", "Claude Code"]
+links:
+  github: "https://github.com/Ryan-Atkinson87"
+stack:
+  - group: Platform
+    items: ["Docker Compose", "Traefik ingress", "Squid proxy + iptables egress"]
+  - group: Backend
+    items: ["FastAPI (Python)"]
+  - group: Frontend
+    items: ["React + Vite"]
+  - group: State
+    items: ["Git + GitHub", "Postgres (if concurrent writes need it)"]
+  - group: Agents
+    items: ["Claude Code (Opus 4 plan/review, Sonnet 4 build)", "Codex, Gemini via adapter"]
+  - group: Tracking
+    items: ["Notion", "GitHub Projects"]
+milestones:
+  - "Architecture finalised — Compose topology, Traefik, Squid + iptables egress, FastAPI, React/Vite UI"
+  - "Persona model designed — type × speciality composed at render time, solving agents-out-of-lane"
+  - "Wave loop specified — branch naming, retries, model mapping, plan ownership, escalation triggers"
+  - "Skill set authored — full orchestrator + implementor process files, validated against Trive Services"
+  - "Full 18-section spec written — adapter interface, wave loop, usage monitoring, security, observability"
+inProgress: "Foundations are being wired up: the Docker Compose environment, FastAPI scaffold, Traefik + Squid config, and the React UI shell — taking the spec from paper to a running system."
+future:
+  - "Provider adapter — one interface over Claude Code, Codex and Gemini"
+  - "Usage monitoring — pause at the threshold instead of degrading output"
+  - "Multi-project support — config system to run against any repo with minimal bootstrap"
+  - "Observability — structured logging + live wave-progress view in the UI"
+  - "Escalation handling — surface blockers with enough context to decide and resume"
+---
+
+Autonomous AI coding agents are powerful but unstructured out of the box: they forget context between sessions, stray beyond their remit, make calls they shouldn’t, and have no idea when they’ve hit their usage ceiling. Running a multi-repo project through one is manual and fragile.
+
+Code Runner wraps the agent in a proper orchestration layer. It drives Claude Code (or Codex or Gemini, behind a common adapter) through a project wave by wave — managing branches, PRs, Notion sync, GitHub issue state and usage monitoring automatically. The human stays out until a wave hand-off PR is ready for review. When capacity runs low, the engine pauses rather than degrading quality silently.
+
+The first target is Trive Services, a real three-repo platform. Code Runner is built and validated against it, then extracted as a generic tool that runs on any project with minimal setup.

@@ -1,0 +1,48 @@
+---
+order: 2
+slug: trive-services
+title: Trive Services
+kind: Multi-tenant SaaS platform
+status: building
+statusLabel: "In development"
+year: "2026"
+summary: "A purpose-built booking platform for mobile service operators — two branded storefronts, one backend, multi-agent AI build workflow."
+role: "Solo — architecture, full-stack, AI orchestration"
+stackShort: ["NestJS", "React", "Postgres", "Cloudflare"]
+links:
+  live: "https://triveservices.uk"
+  github: "https://github.com/Ryan-Atkinson87"
+stack:
+  - group: Backend
+    items: ["NestJS (TypeScript)", "Prisma", "Neon PostgreSQL", "Passport.js + JWT", "Zod", "Resend", "Google Calendar API", "Nominatim"]
+  - group: Customer
+    items: ["Vite + React 18 + TS", "Tailwind", "TanStack Query v5", "React Hook Form", "React Router v6", "MSW"]
+  - group: Testing
+    items: ["Vitest", "React Testing Library", "Playwright"]
+  - group: Admin
+    items: ["Same stack", "Separate Cloudflare Pages deploy", "Dark sidebar / mobile tabs"]
+  - group: Infra
+    items: ["Cloudflare Pages / DNS / Zero Trust", "Self-hosted Linux + Docker + Traefik v3", "Railway", "pnpm"]
+  - group: Workflow
+    items: ["GitHub + Notion", "Multi-agent Claude Code"]
+milestones:
+  - "Backend Phase 1: NestJS scaffold, Prisma schema on Neon, global setup (Zod pipe, exception filter, CORS, Helmet), ConfigService, /healthz, seed script"
+  - "Customer Phase 0: Vite + TS + Tailwind wired to design tokens, SubdomainThemeProvider, all UI primitives, CI pipeline"
+  - "Customer Phase 1: Root + subdomain landings, tabbed auth, AuthProvider + ProtectedRoute, services wired to API, MSW mocks"
+  - "Admin M0–M1: full scaffold + primitives, API client with 401 handling, RequireAuth guard, login with Zod, logout"
+  - "Infra: all three services running in Docker behind Traefik, public via Cloudflare Zero Trust tunnel"
+future:
+  - "Customer + admin auth (register / login / logout / me) with dedicated JWT + guards"
+  - "ProfileGate, Book route, week-view availability calendar"
+  - "Two-step booking: PENDING + 10-min slot lock → CONFIRMED; lazy lock expiry, no Redis"
+  - "Proximity discount: 5% within 2 miles of another same-day booking"
+  - "Subscriptions with pause / cancel / waitlist; reschedule with status stepper"
+  - "Job photo uploads, internal operator notes, review prompts, reporting"
+  - "Google Calendar OAuth live sync; production deploy of all three services"
+---
+
+Local tradespeople rely on word of mouth or generic booking platforms that aren’t built around mobile service work. Trive Services is a purpose-built platform for operators who work from a van rather than a fixed premises.
+
+The launch covers two services under one operator — Trive Aqua (aquarium maintenance) and Trive Cycles (bike servicing) — sharing a single backend and admin while presenting as distinct branded experiences via subdomain routing.
+
+Beyond the business, it is a portfolio piece in greenfield architecture: multi-tenant theming, a real booking flow with slot locking and proximity pricing, and a multi-agent Claude Code workflow coordinated through Notion and GitHub.

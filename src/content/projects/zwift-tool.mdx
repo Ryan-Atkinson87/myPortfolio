@@ -1,0 +1,56 @@
+---
+order: 1
+slug: zwift-tool
+title: Zwift Tool
+kind: Full-stack web app
+status: live
+statusLabel: "Live · real users"
+year: "2025"
+summary: "A modern workout editor for Zwift with reusable blocks and bulk-replace across many files — the feature the dated incumbents never built."
+role: "Solo — design, frontend, backend, infra"
+stackShort: ["React", "TypeScript", "Spring Boot", "Postgres"]
+links:
+  live: "https://zwift.trivedev.uk"
+  github: "https://github.com/Ryan-Atkinson87"
+  video: "#"
+stack:
+  - group: Frontend
+    items: ["React", "TypeScript", "Vite", "Tailwind CSS"]
+  - group: Backend
+    items: ["Spring Boot (Java 21)", "Maven"]
+  - group: Database
+    items: ["Neon serverless Postgres"]
+  - group: Auth
+    items: ["Custom JWT", "HttpOnly cookies", "Rotating refresh tokens"]
+  - group: Infra
+    items: ["Cloudflare Pages", "Railway", "Cloudflare DNS / CDN"]
+  - group: Observability
+    items: ["Sentry (frontend + backend)"]
+milestones:
+  - "Full auth: sign up / in / out, token refresh, rotating refresh tokens, multi-provider identity schema"
+  - ".zwo upload with client-side XML parsing and drag-to-define section boundaries on import"
+  - "Visual editor: bar-chart canvas showing duration, %FTP, Zwift zone colour and three labelled sections"
+  - "Interval editing — add, reorder, delete, edit any block; configurable zone presets"
+  - "Block library: save sections, browse by type, preview, replace in a workout"
+  - "Bulk replace across multiple saved workouts using a library block, download as zip"
+  - "Single undo per section (prev-block pointer; undo doubles as redo)"
+  - "GDPR: privacy policy, documented third-party processors, privacy contact"
+  - "WCAG 2.1 AA sweep — aria, touch targets, keyboard nav, focus rings"
+  - "Mobile UX: touch-drag reliability on the SVG canvas, pull-to-refresh prevention"
+  - "Sentry live in both tiers; YouTube walkthrough + Reddit & LinkedIn launch posts"
+future:
+  - "OpenAPI spec + structured JSON so the API is consumable by AI agents and third-party tools"
+  - "Automated test coverage, front and back"
+  - "NP and Intensity Factor calculation"
+  - "TrainingPeaks and Intervals.icu export, Strava sync"
+  - "N+1 query optimisation for batch workout fetching"
+  - "Social login (Google, Strava, Apple, email OTP)"
+  - "Shared Trive auth service across tools under trivedev.uk"
+  - "iOS, Android and desktop apps under consideration"
+---
+
+Zwift workout files are plain XML. People who build structured training plans end up repeating the same warm-up and cool-down blocks across dozens of files, and changing them means editing each one by hand — tedious and error-prone.
+
+The two main competitors offer visual editors but are dated and have no concept of reusable blocks or bulk editing across workouts. Zwift Tool fills that gap: a clean, modern editor with a three-section model, a personal block library, and a bulk-replace that can swap a section across many saved workouts in one action and export the lot as a zip.
+
+It is a genuinely useful community tool — and a demonstration of full-stack product thinking, shipped from a side project with real users.

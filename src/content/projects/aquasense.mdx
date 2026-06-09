@@ -1,0 +1,42 @@
+---
+order: 3
+slug: aquasense
+title: Trive Aquasense
+kind: IoT hardware + software
+status: building
+statusLabel: "Active · open source"
+year: "2025"
+summary: "An open-source, multi-tank aquarium monitor — sensors to dashboard. A breadboard idea grown into a structured Python service with a custom PCB and printed enclosure."
+role: "Solo — hardware, firmware, mechanical, software"
+stackShort: ["Python", "Raspberry Pi", "MQTT", "Fusion 360"]
+links:
+  github: "https://github.com/Ryan-Atkinson87"
+stack:
+  - group: Hardware
+    items: ["Raspberry Pi Zero WH", "DS18B20 (1-Wire temp)", "DHT22 (temp + humidity)", "Flow sensor (GPIO pulse)", "HC-SR04 (level)", "ST7789 1.47\" display", "SSD1306 OLED", "Custom Pi HAT PCB", "3D-printed enclosure"]
+  - group: Software
+    items: ["Python 3.11+", "pigpio", "Paho MQTT", "ThingsBoard", "systemd"]
+  - group: Tooling
+    items: ["Autodesk Inventor Pro 2026", "Fusion 360 (PCB)", "Bambu Studio", "Git / GitHub"]
+milestones:
+  - "Breadboard prototype with all four sensor types reading live data"
+  - "Structured Python agent — clean modular architecture (sensors, pipeline, outputs, transport separated)"
+  - "ThingsBoard MQTT integration with a live telemetry dashboard"
+  - "ST7789 + SSD1306 display drivers, including a persistent system-status mode"
+  - "Telemetry pipeline: calibration, EMA smoothing, range filtering, per-key precision rounding"
+  - "systemd service config for production deployment on the Pi"
+  - "Protoboard permanent circuit build"
+  - "3D-printed enclosure — horizontal split, ball-and-socket clip, JST connectors"
+future:
+  - "Custom Pi HAT PCB — up to 5 instrumented tanks with daisy-chain satellite boards"
+  - "Breadboard + protoboard build tutorial videos for makers"
+  - "Open hardware docs — wiring diagrams, BOM, build guides in the repo"
+  - "Enclosure accessory system — dovetail sliding joint for tank-mount accessories"
+  - "Installer / setup script to reduce deployment friction"
+---
+
+I keep tropical fish, and monitoring water conditions by hand is tedious and easy to neglect. Commercial monitors exist but they’re expensive, locked to proprietary ecosystems, and offer no visibility into how they work.
+
+Aquasense started as a personal fix: continuously track temperature, flow, humidity and water level across multiple tanks, publish to a live dashboard, and alert me when something’s wrong — while understanding every part of it, from the wiring up to the software architecture.
+
+It grew from a breadboard prototype into a structured Python agent running as a systemd service, with a custom PCB HAT in design and a 3D-printed enclosure. It is fully open source — the maker and aquarium communities both lack good, documented DIY monitoring at this level.

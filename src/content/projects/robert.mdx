@@ -1,0 +1,41 @@
+---
+order: 5
+slug: robert
+title: Robert the Robot Arm
+kind: Hardware + web control
+status: building
+statusLabel: "Ongoing · built with my son"
+year: "2025"
+summary: "A browser-controlled robot — wheels, a four-servo arm and a claw on a Raspberry Pi. No app, no proprietary remote: just a web page driving real hardware."
+role: "Built with my son — hardware + full stack"
+stackShort: ["Python", "Flask", "Raspberry Pi", "HTML"]
+links:
+  github: "https://github.com/Ryan-Atkinson87"
+stack:
+  - group: Hardware
+    items: ["Raspberry Pi", "CamJam EduKit motor controller", "PCA9685 16-ch PWM servo HAT", "4-servo arm (base, shoulder, elbow, claw)", "NiMH AA pack (separate motor/servo supply)"]
+  - group: Backend
+    items: ["Python / Flask", "gpiozero CamJamKitRobot", "adafruit_servokit", "REST API"]
+  - group: Frontend
+    items: ["Single HTML file — no framework, no build", "Keyboard controls", "Live reload via /version polling"]
+milestones:
+  - "Full wheel control (forward, back, left, right, stop) from the browser"
+  - "Four-servo arm control with per-servo min/max angle limits"
+  - "Servo calibration — hardware offset applied silently so UI values stay intuitive"
+  - "Motor balance adjustment to compensate for unequal motor speeds"
+  - "Servo release endpoint — servos go limp when idle, reducing heat and wear"
+  - "Keyboard shortcuts for all movement and arm functions"
+  - "Live reload during development without restarting the server"
+future:
+  - "PS4 controller support via the browser Gamepad API (button mapping decided with my son)"
+  - "Onboard Pi camera streamed to the browser UI"
+  - "LEDs for presence and atmosphere"
+  - "Autonomous pickup — sequenced arm movements from a single action"
+  - "Visual customisation — stickers, panels or a printed shell (my son gets final say)"
+---
+
+Most robotics projects start with a kit and end with a kit. Robert started with a question from my son: “Can we build a robot that we actually control?” So we did.
+
+Robert is a physical robot — wheels, a four-servo arm, a claw — on a Raspberry Pi, controlled entirely through a browser. No app to install, no proprietary remote. Just a web page sending commands to real hardware.
+
+It exists for two reasons: to build something genuinely fun and useful with my son, where his input shapes what Robert does next — and to explore the full stack of a hardware-connected web app, from GPIO and I2C servo control at the bottom, to a Flask API in the middle, to a browser UI at the top.
