@@ -6,22 +6,21 @@ kind: Hardware + web control
 status: building
 statusLabel: "Ongoing · built with my son"
 year: "2025"
-summary: "A browser-controlled robot — wheels, a four-servo arm and a claw on a Raspberry Pi. No app, no proprietary remote: just a web page driving real hardware."
-role: "Built with my son — hardware + full stack"
+summary: "A browser-controlled robot (wheels, a four-servo arm and a claw) on a Raspberry Pi. No app, no proprietary remote: just a web page driving real hardware."
+role: "Built with my son: hardware + full stack"
 stackShort: ["Python", "Flask", "Raspberry Pi", "HTML"]
 links:
-  github: "https://github.com/Ryan-Atkinson87"
 stack:
   - group: Hardware
     items: ["Raspberry Pi", "CamJam EduKit motor controller", "PCA9685 16-ch PWM servo HAT", "4-servo arm (base, shoulder, elbow, claw)", "NiMH AA pack (separate motor/servo supply)"]
   - group: Backend
     items: ["Python / Flask", "gpiozero CamJamKitRobot", "adafruit_servokit", "REST API"]
   - group: Frontend
-    items: ["Single HTML file — no framework, no build", "Keyboard controls", "Live reload via /version polling"]
+    items: ["Single HTML file: no framework, no build", "Keyboard controls", "Live reload via /version polling"]
 milestones:
   - "Full wheel control (forward, back, left, right, stop) from the browser"
   - "Four-servo arm control with per-servo min/max angle limits"
-  - "Servo calibration — hardware offset applied silently so UI values stay intuitive"
+  - "Servo calibration: hardware offset applied silently so UI values stay intuitive"
   - "Motor balance adjustment to compensate for unequal motor speeds"
   - "Servo release endpoint — servos go limp when idle, reducing heat and wear"
   - "Keyboard shortcuts for all movement and arm functions"
