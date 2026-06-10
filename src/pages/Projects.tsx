@@ -35,8 +35,8 @@ export function Projects() {
   return (
     <main>
       <Seo
-        title="Projects — Ryan Atkinson"
-        description="Selected projects by Ryan Atkinson — full-stack web apps and connected hardware."
+        title="Projects | Ryan Atkinson"
+        description="Selected projects by Ryan Atkinson: full-stack web apps and connected hardware."
       />
       <section className="page-head">
         <div className="wrap">
@@ -50,7 +50,7 @@ export function Projects() {
             and why they exist.
           </h1>
           <p className="lede reveal in" style={{ maxWidth: 640, marginTop: 28 }}>
-            Each of these started as a real problem — mine, my son’s, or a community’s — and got built properly.
+            Each of these started as a real problem (mine, my son’s, or a community’s) and got built properly.
             Here’s the why, the stack, what’s done, and where each one is going.
           </p>
           <div className="filters reveal in">

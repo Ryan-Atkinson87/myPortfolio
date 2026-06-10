@@ -11,8 +11,8 @@ export function Skills() {
   return (
     <main>
       <Seo
-        title="Skills — Ryan Atkinson"
-        description="Technologies Ryan Atkinson works with — languages, frameworks, databases, infrastructure and hardware."
+        title="Skills | Ryan Atkinson"
+        description="Technologies Ryan Atkinson works with: languages, frameworks, databases, infrastructure and hardware."
       />
       <section className="page-head">
         <div className="wrap">
@@ -22,7 +22,7 @@ export function Skills() {
           </div>
           <h1 className="h1 reveal in">The tools I reach&nbsp;for.</h1>
           <p className="lede reveal in" style={{ maxWidth: 640, marginTop: 28 }}>
-            No percentages or progress bars — just the technologies I’m genuinely confident building with, grouped by
+            No percentages or progress bars: just the technologies I’m genuinely confident building with, grouped by
             where they live in the stack. Most of these are load-bearing in a shipped or in-build project.
           </p>
         </div>

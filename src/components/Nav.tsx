@@ -32,7 +32,7 @@ export function Nav() {
   return (
     <header className="nav">
       <div className="wrap nav-inner">
-        <NavLink className="brand" to="/" aria-label="Ryan Atkinson — home">
+        <NavLink className="brand" to="/" aria-label="Ryan Atkinson, home">
           <img className="mark" src={theme === 'dark' ? MARK_DARK : MARK_LIGHT} alt="Trive mark" />
           <span className="wm">
             <span className="name">RYAN ATKINSON</span>

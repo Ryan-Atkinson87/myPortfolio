@@ -8,12 +8,12 @@ const PLANNED = [
   {
     label: 'Build diary',
     title: 'Building Trive Services with multi-agent Claude Code',
-    body: 'How I orchestrated a wave-by-wave AI build workflow across a three-service platform — what worked, what blew up, and what Code Runner is designed to fix.',
+    body: 'How I orchestrated a wave-by-wave AI build workflow across a three-service platform: what worked, what blew up, and what Code Runner is designed to fix.',
   },
   {
     label: 'Hardware',
     title: 'From breadboard to PCB: designing the Aquasense HAT',
-    body: 'A walkthrough of the transition from protoboard to a custom Pi HAT — sensor wiring, Fusion 360 PCB layout, and the enclosure that clips to the tank.',
+    body: 'A walkthrough of the transition from protoboard to a custom Pi HAT: sensor wiring, Fusion 360 PCB layout, and the enclosure that clips to the tank.',
   },
   {
     label: 'Post-mortem',
@@ -26,8 +26,8 @@ export function Writing() {
   return (
     <main>
       <Seo
-        title="Writing — Ryan Atkinson"
-        description="Writing by Ryan Atkinson — posts on software engineering, hardware, and building products."
+        title="Writing | Ryan Atkinson"
+        description="Writing by Ryan Atkinson: posts on software engineering, hardware, and building products."
       />
       <section style={{ padding: '72px 0 0' }}>
         <div className="wrap">
@@ -39,7 +39,7 @@ export function Writing() {
             Build logs &amp;&nbsp;write&#8209;ups.
           </h1>
           <p className="lede reveal in" style={{ maxWidth: 600, marginTop: 28 }}>
-            Project post-mortems, build diaries, and the occasional deep-dive. The first articles are in progress — subscribe to the{' '}
+            Project post-mortems, build diaries, and the occasional deep-dive. The first articles are in progress: subscribe to the{' '}
             <a href="https://github.com/Ryan-Atkinson87" target="_blank" rel="noopener" style={{ color: 'var(--color-accent)', fontWeight: 600 }}>
               GitHub
             </a>{' '}

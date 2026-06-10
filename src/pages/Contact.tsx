@@ -45,8 +45,8 @@ export function Contact() {
   return (
     <main>
       <Seo
-        title="Contact — Ryan Atkinson"
-        description="Get in touch with Ryan Atkinson — roles, freelance, or just to say hello."
+        title="Contact | Ryan Atkinson"
+        description="Get in touch with Ryan Atkinson: roles, freelance, or just to say hello."
       />
       <section style={{ padding: '72px 0 0' }}>
         <div className="wrap">
@@ -66,7 +66,7 @@ export function Contact() {
                   <div className="ok">
                     <CheckIcon width={28} height={28} strokeWidth={2.4} />
                   </div>
-                  <h3 className="h3">Thanks — that’s on its way.</h3>
+                  <h3 className="h3">Thanks, that’s on its way.</h3>
                   <p className="muted mt-2">
                     I’ll get back to you soon. In the meantime, feel free to browse{' '}
                     <NavLink className="tlink" to="/projects" style={{ display: 'inline' }}>
@@ -117,7 +117,7 @@ export function Contact() {
                   </form>
                   {status === 'error' && (
                     <p className="ct-error">
-                      Something went wrong sending that — try again, or email me directly at ryan@trivedev.uk.
+                      Something went wrong sending that. Try again, or email me directly at ryan@trivedev.uk.
                     </p>
                   )}
                 </>

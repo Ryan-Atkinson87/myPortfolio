@@ -13,8 +13,8 @@ export function Links() {
   return (
     <main>
       <Seo
-        title="Links — Ryan Atkinson"
-        description="Profiles, résumé and writing — GitHub, LinkedIn and more."
+        title="Links | Ryan Atkinson"
+        description="Profiles, résumé and writing: GitHub, LinkedIn and more."
       />
       <section className="page-head">
         <div className="wrap">

@@ -30,8 +30,8 @@ export function Home() {
   return (
     <>
       <Seo
-        title="Ryan Atkinson — Software Engineer"
-        description="Ryan Atkinson — software engineer building full-stack products and the hardware they run on. Part of the Trive Group."
+        title="Ryan Atkinson | Software Engineer"
+        description="Ryan Atkinson, software engineer building full-stack products and the hardware they run on. Part of the Trive Group."
       />
       <main>
       {/* ============ HERO ============ */}
@@ -74,7 +74,7 @@ export function Home() {
           </div>
 
           <div className="hero-aside reveal in">
-            <div className="ph portrait" data-label="Portrait — drop in" />
+            <div className="ph portrait" data-label="Portrait: drop in" />
             <span className="ticks" style={{ top: -7, right: -7 }} />
             <span className="ticks" style={{ bottom: -7, left: -7, transform: 'rotate(180deg)' }} />
             <div className="hero-card">
@@ -85,7 +85,7 @@ export function Home() {
                 <span className="c1">~</span> whoami
               </div>
               <div className="ln">
-                <span className="c2">ryan</span> — engineer &amp; maker
+                <span className="c2">ryan</span>: engineer &amp; maker
               </div>
               <div className="ln">
                 <span className="c1">$</span> currently building
@@ -132,7 +132,7 @@ export function Home() {
           <div className="feat-grid">
             {featured.map((project) => (
               <Reveal as={NavLink} className="card card-hover pcard" to={`/projects/${project.slug}`} key={project.slug}>
-                <div className="ph pcover" data-label={`${project.title} — screenshot`} />
+                <div className="ph pcover" data-label={`${project.title}: screenshot`} />
                 <div className="ptop">
                   <span className="pkind">{project.kind}</span>
                   <span className={`badge ${project.status}`}>

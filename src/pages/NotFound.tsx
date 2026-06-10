@@ -13,7 +13,7 @@ const QUICK_LINKS = [
 export function NotFound() {
   return (
     <main>
-      <Seo title="404 — Ryan Atkinson" description="" />
+      <Seo title="404 | Ryan Atkinson" description="" />
       <section style={{ padding: '96px 0' }}>
         <div className="wrap">
           <div style={{ fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--color-accent)', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: 12, marginBottom: 28 }}>

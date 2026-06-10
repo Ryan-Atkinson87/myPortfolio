@@ -27,7 +27,7 @@ export function ProjectDetail() {
   return (
     <main className="wrap">
       <Seo
-        title={`${project.title} — Ryan Atkinson`}
+        title={`${project.title} | Ryan Atkinson`}
         description={project.summary}
       />
       <NavLink className="pd-back" to="/projects">
@@ -77,7 +77,7 @@ export function ProjectDetail() {
         </div>
       </Reveal>
 
-      <Reveal as="div" className="ph pd-hero" data-label={`${project.title} — hero screenshot / demo`} />
+      <Reveal as="div" className="ph pd-hero" data-label={`${project.title}: hero screenshot / demo`} />
 
       <div className="pd-body">
         <div className="pd-main">

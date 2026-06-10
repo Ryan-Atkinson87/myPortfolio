@@ -14,8 +14,8 @@ export function About() {
   return (
     <main>
       <Seo
-        title="About — Ryan Atkinson"
-        description="About Ryan Atkinson — software engineer, maker, and dad in Burnley, UK."
+        title="About | Ryan Atkinson"
+        description="About Ryan Atkinson, software engineer, maker, and dad in Burnley, UK."
       />
       <section className="page-head">
         <div className="wrap">
@@ -96,7 +96,7 @@ export function About() {
             <span>The Trive ecosystem</span>
           </div>
           <p className="body reveal in" style={{ maxWidth: 640, marginBottom: 8 }}>
-            My projects ship under Trive Group — a small family of ventures I run. A few you can visit:
+            My projects ship under Trive Group, a small family of ventures I run. A few you can visit:
           </p>
           <div className="ventures reveal in">
             {ventures.map((venture) => (

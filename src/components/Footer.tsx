@@ -30,7 +30,7 @@ export function Footer() {
               </span>
             </NavLink>
             <p className="blurb">
-              Software engineer building full-stack products and connected hardware — from booking platforms to
+              Software engineer building full-stack products and connected hardware: from booking platforms to
               aquarium monitors. Part of the Trive Group.
             </p>
           </div>
