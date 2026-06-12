@@ -23,7 +23,7 @@ const EXPLORE_LINKS = [
 
 export function Home() {
   const featured = projects.slice(0, 4)
-  const { availability, stats } = homeHero.frontmatter
+  const { availability, stats, portrait } = homeHero.frontmatter
   const HeroLede = homeHero.Body
   const Intro = homeIntro.Body
 
@@ -74,7 +74,9 @@ export function Home() {
           </div>
 
           <div className="hero-aside reveal in">
-            <div className="ph portrait" data-label="Portrait: drop in" />
+            <div className="ph portrait" data-label="Portrait: drop in">
+              {portrait && <img src={portrait} alt="Ryan Atkinson" />}
+            </div>
             <span className="ticks" style={{ top: -7, right: -7 }} />
             <span className="ticks" style={{ bottom: -7, left: -7, transform: 'rotate(180deg)' }} />
             <div className="hero-card">
@@ -132,7 +134,9 @@ export function Home() {
           <div className="feat-grid">
             {featured.map((project) => (
               <Reveal as={NavLink} className="card card-hover pcard" to={`/projects/${project.slug}`} key={project.slug}>
-                <div className="ph pcover" data-label={`${project.title}: screenshot`} />
+                <div className="ph pcover" data-label={`${project.title}: screenshot`}>
+                  {project.image && <img src={project.image} alt="" />}
+                </div>
                 <div className="ptop">
                   <span className="pkind">{project.kind}</span>
                   <span className={`badge ${project.status}`}>

@@ -22,6 +22,8 @@ export interface ProjectFrontmatter {
   status: ProjectStatus
   statusLabel: string
   year: string
+  /** Path to a cover/hero screenshot, e.g. "/assets/zwift-tool-editor.png". Omit to show the placeholder. */
+  image?: string
   summary: string
   role: string
   stackShort: string[]

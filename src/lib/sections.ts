@@ -15,6 +15,8 @@ export interface HeroStat {
 export interface HomeHeroFrontmatter {
   availability: string
   stats: HeroStat[]
+  /** Path to the hero portrait photo, e.g. "/assets/ryan-portrait.jpeg". Omit to show the placeholder. */
+  portrait?: string
 }
 
 export interface DriveCard {
@@ -40,6 +42,8 @@ export interface AboutFrontmatter {
   basedIn: string
   currently: string
   openTo: string
+  /** Path to the portrait/workspace photo, e.g. "/assets/ryan-portrait.jpeg". Omit to show the placeholder. */
+  portrait?: string
   drives: DriveCard[]
   hobbies: HobbyCard[]
   ventures: Venture[]

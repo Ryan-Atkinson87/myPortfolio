@@ -74,7 +74,9 @@ export function Projects() {
             {visible.map((project) => (
               <Reveal as="article" className="prow in" key={project.slug}>
                 <NavLink className="prow-link" to={`/projects/${project.slug}`} aria-label={project.title} />
-                <div className="ph pcover" data-label={project.title} />
+                <div className="ph pcover" data-label={project.title}>
+                  {project.image && <img src={project.image} alt="" />}
+                </div>
                 <div className="pbody">
                   <div className="prow-top">
                     <span className="pkind">{project.kind}</span>

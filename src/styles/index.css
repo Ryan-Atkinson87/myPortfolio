@@ -324,6 +324,8 @@
   }
   .ph.tall { min-height: 420px; }
   .ph.wide { aspect-ratio: 16 / 9; min-height: 0; }
+  .ph img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .ph:has(img)::after { content: none; }
 
   /* ---------- Footer ---------- */
   .foot { border-top: 1px solid var(--color-line); background: var(--color-bg-2); padding: 56px 0 40px; }

@@ -77,7 +77,9 @@ export function ProjectDetail() {
         </div>
       </Reveal>
 
-      <Reveal as="div" className="ph pd-hero" data-label={`${project.title}: hero screenshot / demo`} />
+      <Reveal as="div" className="ph pd-hero" data-label={`${project.title}: hero screenshot / demo`}>
+        {project.image && <img src={project.image} alt="" />}
+      </Reveal>
 
       <div className="pd-body">
         <div className="pd-main">

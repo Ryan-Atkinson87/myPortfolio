@@ -8,7 +8,7 @@ import { about } from '@/lib/sections'
 import './About.css'
 
 export function About() {
-  const { basedIn, currently, openTo, drives, hobbies, ventures } = about.frontmatter
+  const { basedIn, currently, openTo, portrait, drives, hobbies, ventures } = about.frontmatter
   const Bio = about.Body
 
   return (
@@ -31,7 +31,9 @@ export function About() {
 
           <div className="ab-grid">
             <Reveal as="div" className="ab-portrait">
-              <div className="ph" data-label="Portrait / workspace" />
+              <div className="ph" data-label="Portrait / workspace">
+                {portrait && <img src={portrait} alt="Ryan Atkinson" />}
+              </div>
               <div className="ab-card">
                 <div className="k">Based in</div>
                 <div className="v">{basedIn}</div>
