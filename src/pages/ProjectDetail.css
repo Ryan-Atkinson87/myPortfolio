@@ -20,7 +20,7 @@
   .pd-facts > div:last-child { border-bottom: 0; }
 }
 
-.pd-hero { aspect-ratio: 16 / 8; margin-top: 44px; }
+.pd-hero { aspect-ratio: 16 / 8; margin-top: 44px; min-height: 0; }
 
 .pd-body { display: grid; grid-template-columns: 1fr 360px; gap: 64px; align-items: start; margin-top: 80px; }
 @media (max-width: 980px) { .pd-body { grid-template-columns: 1fr; gap: 48px; } }
@@ -57,7 +57,7 @@
 .pd-nav a.next { text-align: right; border-left: 1px solid var(--c-line); padding-left: 32px; }
 .pd-nav a.prev { padding-right: 32px; }
 .pd-nav .lab { font-family: var(--font-mono), monospace; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-ink-subtle); margin-bottom: 10px; }
-.pd-nav h4 { margin: 0; color: var(--c-ink); }
+.pd-nav h3 { margin: 0; color: var(--c-ink); }
 @media (max-width: 600px) {
   .pd-nav { grid-template-columns: 1fr; }
   .pd-nav a.next { text-align: left; border-left: 0; border-top: 1px solid var(--c-line); padding-left: 0; }

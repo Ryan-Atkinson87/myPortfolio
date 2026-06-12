@@ -35,7 +35,7 @@ export function Footer() {
             </p>
           </div>
           <div>
-            <h5>Site</h5>
+            <h2>Site</h2>
             {SITE_LINKS.map((link) => (
               <NavLink key={link.to} to={link.to}>
                 {link.label}
@@ -43,7 +43,7 @@ export function Footer() {
             ))}
           </div>
           <div>
-            <h5>Elsewhere</h5>
+            <h2>Elsewhere</h2>
             <a href="https://github.com/Ryan-Atkinson87" target="_blank" rel="noopener">
               GitHub ↗
             </a>

@@ -53,15 +53,15 @@ export function About() {
 
       <section className="section-sm">
         <div className="wrap">
-          <div className="seclabel reveal in">
+          <h2 className="seclabel reveal in">
             <span className="num">→</span>
             <span>What drives me</span>
-          </div>
+          </h2>
           <div className="drives">
             {drives.map((drive) => (
               <div className="card reveal in" key={drive.label}>
                 <span className="n">{drive.label}</span>
-                <h4 className="h4">{drive.title}</h4>
+                <h3 className="h4">{drive.title}</h3>
                 <p>{drive.body}</p>
               </div>
             ))}
@@ -71,17 +71,17 @@ export function About() {
 
       <section className="section-sm" style={{ paddingTop: 24 }}>
         <div className="wrap">
-          <div className="seclabel reveal in">
+          <h2 className="seclabel reveal in">
             <span className="num">→</span>
             <span>Beyond the keyboard</span>
-          </div>
+          </h2>
           <div className="hobbies">
             {hobbies.map((hobby) => (
               <div className="hobby reveal in" key={hobby.title}>
                 <span className="ico">
                   <HobbyIcon icon={hobby.icon} />
                 </span>
-                <h4>{hobby.title}</h4>
+                <h3>{hobby.title}</h3>
                 <p>{hobby.body}</p>
               </div>
             ))}
@@ -91,10 +91,10 @@ export function About() {
 
       <section className="section-sm" style={{ paddingTop: 24 }}>
         <div className="wrap">
-          <div className="seclabel reveal in">
+          <h2 className="seclabel reveal in">
             <span className="num">→</span>
             <span>The Trive ecosystem</span>
-          </div>
+          </h2>
           <p className="body reveal in" style={{ maxWidth: 640, marginBottom: 8 }}>
             My projects ship under Trive Group, a small family of ventures I run. A few you can visit:
           </p>

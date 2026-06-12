@@ -38,7 +38,7 @@ export function Skills() {
                     <SkillIcon icon={group.icon} />
                   </span>
                   <div>
-                    <h4 className="h4">{group.name}</h4>
+                    <h2 className="h4">{group.name}</h2>
                     <div className="sk-note">{group.note}</div>
                   </div>
                 </div>
@@ -57,15 +57,15 @@ export function Skills() {
 
       <section className="section-sm" style={{ paddingTop: 24 }}>
         <div className="wrap">
-          <div className="seclabel reveal in">
+          <h2 className="seclabel reveal in">
             <span className="num">→</span>
             <span>How I work</span>
-          </div>
+          </h2>
           <div className="howrow reveal in">
             {howIWork.map((step) => (
               <div key={step.n}>
                 <div className="n">{step.n}</div>
-                <h4>{step.title}</h4>
+                <h3>{step.title}</h3>
                 <p>{step.body}</p>
               </div>
             ))}

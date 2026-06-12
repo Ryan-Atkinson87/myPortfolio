@@ -6,7 +6,7 @@
 .ln-row:hover .ln-ico { border-color: var(--c-accent); color: var(--c-accent); }
 .ln-ico svg { width: 24px; height: 24px; }
 .ln-main { flex: 1; min-width: 0; }
-.ln-main h4 { margin: 0 0 3px; }
+.ln-main h2 { margin: 0 0 3px; }
 .ln-main .u { font-family: var(--font-mono), monospace; font-size: 12px; color: var(--c-ink-muted); }
 .ln-go { color: var(--c-ink-subtle); flex: none; transition: transform .18s var(--ease-brand), color .18s; }
 .ln-row:hover .ln-go { color: var(--c-accent); transform: translate(3px, -3px); }

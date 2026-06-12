@@ -50,13 +50,13 @@ export function Writing() {
 
       <section className="section-sm">
         <div className="wrap">
-          <div className="seclabel reveal in">
+          <h2 className="seclabel reveal in">
             <span className="num">→</span>
             <span>Coming up</span>
-          </div>
+          </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 0, borderTop: '1px solid var(--color-line)', marginTop: 8 }}>
             {PLANNED.map((item) => (
-              <Reveal key={item.title} style={{ display: 'grid', gridTemplateColumns: '1fr auto', alignItems: 'center', gap: 32, padding: '32px 0', borderBottom: '1px solid var(--color-line-soft)', opacity: 0.6 }}>
+              <Reveal key={item.title} style={{ display: 'grid', gridTemplateColumns: '1fr auto', alignItems: 'center', gap: 32, padding: '32px 0', borderBottom: '1px solid var(--color-line-soft)' }}>
                 <div>
                   <div style={{ fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--color-accent)', marginBottom: 10 }}>
                     {item.label}

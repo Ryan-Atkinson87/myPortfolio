@@ -39,7 +39,7 @@ export function Links() {
                     <LinkIcon icon={item.icon} />
                   </span>
                   <span className="ln-main">
-                    <h4 className="h4">{item.name}</h4>
+                    <h2 className="h4">{item.name}</h2>
                     <span className="u">{item.handle}</span>
                   </span>
                   <span className="ln-tag">{item.tag}</span>
@@ -77,7 +77,7 @@ export function Links() {
                 </svg>
               </span>
               <div>
-                <h4 className="h4">Résumé / CV</h4>
+                <h2 className="h4">Résumé / CV</h2>
                 <p className="small" style={{ margin: '3px 0 0' }}>
                   One page, recruiter-ready. PDF.
                 </p>

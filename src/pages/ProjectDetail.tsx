@@ -82,20 +82,20 @@ export function ProjectDetail() {
       <div className="pd-body">
         <div className="pd-main">
           <Reveal as="section" className="pd-block">
-            <div className="seclabel">
+            <h2 className="seclabel">
               <span className="num">01</span>
               <span>The why</span>
-            </div>
+            </h2>
             <div className="why">
               <Why />
             </div>
           </Reveal>
 
           <Reveal as="section" className="pd-block">
-            <div className="seclabel">
+            <h2 className="seclabel">
               <span className="num">02</span>
               <span>What’s built</span>
-            </div>
+            </h2>
             <ul className="checks">
               {project.milestones.map((milestone) => (
                 <li key={milestone}>
@@ -110,19 +110,19 @@ export function ProjectDetail() {
 
           {project.inProgress && (
             <Reveal as="section" className="pd-block">
-              <div className="seclabel">
+              <h2 className="seclabel">
                 <span className="num">03</span>
                 <span>In progress</span>
-              </div>
+              </h2>
               <div className="inprog">{project.inProgress}</div>
             </Reveal>
           )}
 
           <Reveal as="section" className="pd-block">
-            <div className="seclabel">
+            <h2 className="seclabel">
               <span className="num">{project.inProgress ? '04' : '03'}</span>
               <span>Where it’s going</span>
-            </div>
+            </h2>
             <ul className="future">
               {project.future.map((item) => (
                 <li key={item}>{item}</li>
@@ -153,11 +153,11 @@ export function ProjectDetail() {
       <nav className="pd-nav">
         <NavLink className="prev" to={`/projects/${prev.slug}`}>
           <div className="lab">← Previous</div>
-          <h4 className="h4">{prev.title}</h4>
+          <h3 className="h4">{prev.title}</h3>
         </NavLink>
         <NavLink className="next" to={`/projects/${next.slug}`}>
           <div className="lab">Next →</div>
-          <h4 className="h4">{next.title}</h4>
+          <h3 className="h4">{next.title}</h3>
         </NavLink>
       </nav>
     </main>

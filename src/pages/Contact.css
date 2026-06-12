@@ -20,8 +20,8 @@
 .ct-direct a:hover { background: var(--c-surface-2); }
 .ct-direct .ci { width: 42px; height: 42px; border-radius: var(--radius-sm); background: var(--c-accent-soft); color: var(--c-accent); display: flex; align-items: center; justify-content: center; flex: none; }
 .ct-direct .ci svg { width: 21px; height: 21px; }
-.ct-direct .k { font-family: var(--font-mono), monospace; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-ink-subtle); }
-.ct-direct .v { font-size: 15.5px; color: var(--c-ink); font-weight: 500; margin-top: 2px; }
+.ct-direct .k { display: block; font-family: var(--font-mono), monospace; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-ink-subtle); }
+.ct-direct .v { display: block; font-size: 15.5px; color: var(--c-ink); font-weight: 500; margin-top: 2px; }
 
 .ct-note { display: flex; gap: 12px; align-items: flex-start; margin-top: 22px; padding: 16px 18px; border: 1px dashed var(--c-line); border-radius: var(--radius-md); }
 .ct-note .d { width: 8px; height: 8px; border-radius: 50%; background: var(--c-accent); margin-top: 6px; flex: none; }

@@ -86,7 +86,7 @@ export function Projects() {
                       {project.year}
                     </span>
                   </div>
-                  <h3 className="h3">{project.title}</h3>
+                  <h2 className="h3">{project.title}</h2>
                   <p className="psum">{project.summary}</p>
                   <div className="tag-row">
                     {project.stackShort.map((tech) => (

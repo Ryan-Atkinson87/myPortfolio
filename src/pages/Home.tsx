@@ -140,7 +140,7 @@ export function Home() {
                     {STATUS_LABEL[project.status]}
                   </span>
                 </div>
-                <h4 className="h4">{project.title}</h4>
+                <h3 className="h4">{project.title}</h3>
                 <p className="psum">{project.summary}</p>
                 <div className="pfoot">
                   <div className="tag-row">
@@ -171,7 +171,7 @@ export function Home() {
             {EXPLORE_LINKS.map((link) => (
               <NavLink to={link.to} key={link.to}>
                 <div className="x-n">{link.n}</div>
-                <h4>{link.title}</h4>
+                <h3>{link.title}</h3>
                 <p>{link.body}</p>
               </NavLink>
             ))}
