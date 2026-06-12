@@ -83,7 +83,7 @@ export function Links() {
                 </p>
               </div>
             </div>
-            <a className="btn btn-primary btn-lg" href="/assets/ryan-atkinson-cv.pdf" download>
+            <a className="btn btn-primary btn-lg" href="/assets/Ryan_Atkinson_CV_2026_web.pdf" download>
               Download PDF
               <svg className="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="12" y1="4" x2="12" y2="15" />
